@@ -92,7 +92,7 @@ class AutoGumaTest {
 
 		assertEquals(visina, ag.getVisina());
 	}
-	
+
 	@ParameterizedTest
 	@CsvSource({ "24", "96", "0", "-45" })
 	void testSetVisinaNedozvoljen(int visina) {
@@ -123,7 +123,8 @@ class AutoGumaTest {
 			"Tigar123, 15, 200, 50, Tigar1231, 15, 200, 50, false",
 			"Tigar123, 15, 200, 50, Tigar123, 16, 200, 50, false",
 			"Tigar123, 15, 200, 50, Tigar123, 15, 201, 50, false",
-			"Tigar123, 15, 200, 50, Tigar123, 15, 200, 51, false", "null, 15, 200, 50, Tigar123, 15, 200, 50, false",
+			"Tigar123, 15, 200, 50, Tigar123, 15, 200, 51, false", 
+			"null, 15, 200, 50, Tigar123, 15, 200, 50, false",
 			"Tigar123, 15, 200, 50, null, 15, 200, 50, false" })
 	void testEqualsObject(String markaModel1, int precnik1, int sirina1, int visina1, String markaModel2, int precnik2,
 			int sirina2, int visina2, boolean eq) {
