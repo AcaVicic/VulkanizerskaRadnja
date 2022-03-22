@@ -4,7 +4,16 @@ import java.util.List;
 import java.util.LinkedList;
 import auto_radnja.gume.AutoGuma;
 
+/**
+ * Predstavlja implementaciju vulkanizerske radnje.
+ * 
+ * Ima operacije dodavanja auto gume u radnju i pretrage radnje.
+ */
 public class VulkanizerskaRadnja implements Radnja {
+	
+	/**
+	 * Lista sa svim auto gumama iz radnje. Inicijalizovana kao LinkedList.
+	 */
 	private List<AutoGuma> gume = new LinkedList<AutoGuma>();
 
 	@Override
